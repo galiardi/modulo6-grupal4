@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(6, 4, 46);
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  font-size: x-large;
+}
+
+input {
+  margin: 0.5rem 0 1.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: large;
+}
+
+button {
+  border: 1px solid antiquewhite;
+  border-radius: 0.5rem;
+  background-color: inherit;
+  color: inherit;
+  padding: 1rem;
+  font-size: large;
+}
+
+.safe-area {
+  height: 6rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+}
+
+address {
+  font-size: large;
+}
