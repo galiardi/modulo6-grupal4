@@ -4,12 +4,15 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "node src/server.js listen --key 123",
+    "dev": "nodemon src/server.js listen --key 123"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "jimp": "^0.22.8",
+    "yargs": "^17.7.2"
   }
 }

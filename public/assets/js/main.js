@@ -1,7 +1,8 @@
-import { isHttpsUrl } from './isHttpsUrl.js';
+import { isHttpsUrl } from './utils/isHttpsUrl.js';
 
 const imageForm = document.getElementById('image-form');
 const imageUrlInput = document.getElementById('image-url-input');
+const renderDiv = document.getElementById('render-div');
 
 imageForm.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -14,6 +15,8 @@ imageForm.addEventListener('submit', async (e) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ imageUrl }),
   });
-  const data = await response.json();
-  console.log(data);
+  const { imageName, error } = await response.json();
+
+  if (error) return alert(error.code);
+  renderDiv.innerHTML = `<img src="assets/img/${imageName}" alt="imagen transformada">`;
 });
