@@ -1,0 +1,17 @@
+<form id='image-form' action='/black-and-white' method='POST'>
+  <label for='image-url-input'>Imagen URL:</label>
+  <input
+    id='image-url-input'
+    name='imageUrl'
+    type='text'
+    placeholder='https://...'
+  />
+  <p>
+    Ejemplo: https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg
+  </p>
+  <button type='submit'>Subir imagen al servidor</button>
+</form>
+<div id='loader-container'></div>
+<div id='render-div'></div>
+<div class='safe-area'></div>
+<script src='assets/js/main.js' type='module'></script>
