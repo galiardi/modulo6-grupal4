@@ -18,10 +18,15 @@ form {
 }
 
 input {
-  margin: 0.5rem 0 1.5rem 0;
+  margin-top: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
   font-size: large;
+}
+
+p {
+  font-size: medium;
+  margin-bottom: 1.5rem;
 }
 
 button {
@@ -48,4 +53,31 @@ footer {
 
 address {
   font-size: large;
+}
+#loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+#render-div {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
