@@ -2,7 +2,7 @@
 
 La rama main resuleve el ejercicio enviando al cliente el nombre del archivo que contiene la imagen transformada. Luego el cliente crea un elemento img con un src apuntando hacia la ubicacion de la imagen en el servidor.
 
-La rama server-side-rendering resuelve el ejercicio creando una vista en el servidor que contiene la imagen del gato o un error en el caso que este ocurra.
+La rama server-side-rendering resuelve el ejercicio creando una vista en el servidor que contiene la imagen transformada o un error en el caso que este ocurra.
 
 1. Levantar servidor:
    ```sh
